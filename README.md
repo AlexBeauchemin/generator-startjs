@@ -50,6 +50,21 @@ Yeoman has a heart of gold. He's a person with feelings and opinions, but he's v
 
 If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
 
+### StartJS
+
+StartJS is a small, clean and structured javascript flow using Requirejs and Mootools Classes.
+
+Using data-view="ViewName" in the html will load the right js (js/src/views/View[ViewName].js). Every views will extend View.js, so put functions that will be used everywhere in this one.
+
+The same approach can be used to create models ou modules, allowing clean javascript structure.
+
+### Tools
+
+Requirejs: A modular script loader used to load javascript file in the browser only when needed, grouped by module
+Mootools Core + jQuery clas mutators: Used to create class-like javascript files.
+Bower: Used to install javascript files with their dependencies
+Grunt: Used for automation (see http://gruntjs.com/)
+Less: Create dynamic css
 
 ## License
 
