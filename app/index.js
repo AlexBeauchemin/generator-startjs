@@ -52,6 +52,7 @@ StartjsGenerator.prototype.app = function app() {
   this.mkdir('app/assets/css/src');
   this.mkdir('app/assets/css/src/helpers');
   this.mkdir('app/assets/css/dest');
+  this.mkdir('app/assets/img');
   this.mkdir('app/assets/js');
   this.mkdir('app/assets/js/src');
   this.mkdir('app/assets/js/src/views');
@@ -64,7 +65,7 @@ StartjsGenerator.prototype.app = function app() {
   this.copy('crossdomain.xml', 'app/crossdomain.xml');
   this.copy('apple-touch-icon-precomposed.png', 'app/apple-touch-icon-precomposed.png');
   this.copy('.htaccess', 'app/.htaccess');
-  this.copy('.gitignore', 'app/.gitignore');
+  this.copy('base-gitignore.txt', 'app/.gitignore');
 
   this.copy('assets/css/dest/main.css', 'app/assets/css/dest/main.css');
   this.copy('assets/css/src/global.less', 'app/assets/css/src/global.less');
