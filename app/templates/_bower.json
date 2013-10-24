@@ -1,0 +1,8 @@
+{
+  "name": "StartJS",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "<%= jqueryVersion %>",
+    "modernizr": "~2.6.2"
+  }
+}
