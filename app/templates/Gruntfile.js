@@ -1,3 +1,5 @@
+// Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> <%= pkg.version %>
+
 module.exports = function(grunt) {
 	var config = {
 		jsSrc: 'app/assets/js/src',

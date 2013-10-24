@@ -1,8 +1,8 @@
 {
-  "name": "StartJS",
-  "version": "0.0.1",
+  "name": "<%= _.slugify(websiteName) %>",
+  "version": "0.0.0",
   "dependencies": {
     "jquery": "<%= jqueryVersion %>",
-    "modernizr": "~2.6.2"
+    "modernizr": "latest"
   }
 }

@@ -1,9 +1,12 @@
 {
   "name": "generator-startjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A generator for StartJS",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+	"startjs",
+	"requirejs",
+	"class"
   ],
   "homepage": "https://github.com/AlexBeauchemin/generator-startjs",
   "bugs": "https://github.com/AlexBeauchemin/generator-startjs/issues",
