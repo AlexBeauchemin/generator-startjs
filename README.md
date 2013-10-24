@@ -61,9 +61,13 @@ The same approach can be used to create models ou modules, allowing clean javasc
 ### Tools
 
 Requirejs: A modular script loader used to load javascript file in the browser only when needed, grouped by module
+
 Mootools Core + jQuery clas mutators: Used to create class-like javascript files.
+
 Bower: Used to install javascript files with their dependencies
+
 Grunt: Used for automation (see http://gruntjs.com/)
+
 Less: Create dynamic css
 
 ## License
