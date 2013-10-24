@@ -59,13 +59,13 @@ StartjsGenerator.prototype.app = function app() {
   this.mkdir('app/assets/js/vendor');
 
   this.template('index.html', 'app/index.html');
-  this.template('_bower.json', 'bower.json');
 
+  this.copy('404.html', 'app/404.html');
+  this.copy('robots.txt', 'app/robots.txt');
   this.copy('favicon.ico', 'app/favicon.ico');
   this.copy('crossdomain.xml', 'app/crossdomain.xml');
   this.copy('apple-touch-icon-precomposed.png', 'app/apple-touch-icon-precomposed.png');
-  this.copy('.htaccess', 'app/.htaccess');
-  this.copy('base-gitignore.txt', 'app/.gitignore');
+  this.copy('htaccess', 'app/.htaccess');
 
   this.copy('assets/css/dest/main.css', 'app/assets/css/dest/main.css');
   this.copy('assets/css/src/global.less', 'app/assets/css/src/global.less');
@@ -79,15 +79,15 @@ StartjsGenerator.prototype.app = function app() {
   this.copy('assets/js/src/App.js', 'app/assets/js/src/App.js');
   this.copy('assets/js/src/views/View.js', 'app/assets/js/src/views/View.js');
   this.copy('assets/js/src/views/ViewHome.js', 'app/assets/js/src/views/ViewHome.js');
-
-  this.copy('_package.json', 'package.json');
 };
 
 StartjsGenerator.prototype.projectfiles = function projectfiles() {
+  this.template('_bower.json', 'bower.json');
+  this.copy('gitignore', '.gitignore');
   this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
-  this.copy('.bowerrc', '.bowerrc');
-  this.copy('.gitignore', '.gitignore');
+  this.copy('bowerrc', '.bowerrc');
   this.copy('Gruntfile.js', 'Gruntfile.js');
   this.copy('README.md', 'README.md');
+  this.copy('_package.json', 'package.json');
 };
