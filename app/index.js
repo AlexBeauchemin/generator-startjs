@@ -88,4 +88,5 @@ StartjsGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('.bowerrc', '.bowerrc');
   this.copy('.gitignore', '.gitignore');
   this.copy('Gruntfile.js', 'Gruntfile.js');
+  this.copy('README.md', 'README.md');
 };

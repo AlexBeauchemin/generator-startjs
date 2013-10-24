@@ -31,6 +31,19 @@ Finally, initiate the generator:
 $ yo startjs
 ```
 
+### Run grunt
+```
+$ grunt
+```
+If you get an error, manually do a bower install and npm install before running grunt 
+```
+$ bower install
+$ npm install
+$ grunt
+```
+
+And now you are ready to go.
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
