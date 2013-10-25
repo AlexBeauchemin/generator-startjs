@@ -4,7 +4,7 @@ var App;
 	requirejs.config({
 		paths: {
 			'jquery': [
-				'//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min',
+				'//code.jquery.com/jquery-<%= jqueryVersion %>.min',
 				'./vendor/jquery/jquery.min'
 			],
 			'mootools': './vendor/mootools-core-1.4.5',

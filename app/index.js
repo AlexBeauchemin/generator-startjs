@@ -75,7 +75,10 @@ StartjsGenerator.prototype.app = function app() {
   this.copy('assets/css/src/helpers/normalize.less', 'app/assets/css/src/helpers/normalize.less');
   this.copy('assets/css/src/helpers/vars.less', 'app/assets/css/src/helpers/vars.less');
 
-  this.copy('assets/js/boot.js', 'app/assets/js/boot.js');
+  this.copy('assets/js/vendor/Class.Mutators.jQuery.js', 'app/assets/js/vendor/Class.Mutators.jQuery.js');
+  this.copy('assets/js/vendor/mootools-core-1.4.5.js', 'app/assets/js/vendor/mootools-core-1.4.5.js');
+
+  this.template('assets/js/boot.js', 'app/assets/js/boot.js');
   this.copy('assets/js/src/App.js', 'app/assets/js/src/App.js');
   this.copy('assets/js/src/views/View.js', 'app/assets/js/src/views/View.js');
   this.copy('assets/js/src/views/ViewHome.js', 'app/assets/js/src/views/ViewHome.js');
