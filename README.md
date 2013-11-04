@@ -52,6 +52,8 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 
 ### StartJS
 
+https://github.com/AlexBeauchemin/startjs
+
 StartJS is a small, clean and structured javascript flow using Requirejs and Mootools Classes.
 
 Using data-view="ViewName" in the html will load the right js (js/src/views/View[ViewName].js). Every views will extend View.js, so put functions that will be used everywhere in this one.
