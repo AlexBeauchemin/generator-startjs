@@ -7,6 +7,8 @@ module.exports = function(grunt) {
 		cssSrc: 'app/assets/css/src',
 		cssDest: 'app/assets/css/dest'
 	};
+	
+	require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
 	grunt.initConfig({
 		config: config,
@@ -58,13 +60,10 @@ module.exports = function(grunt) {
 				tasks: ['less', 'autoprefixer', 'cssmin']
 			}
 		}
+		retire: {
+			files: ['app/assets/js/vendor/*.js']
+		}
 	});
 
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-
-	grunt.registerTask('default', ['jshint', 'less', 'autoprefixer', 'cssmin', 'watch']);
+	grunt.registerTask('default', ['jshint', 'less', 'autoprefixer', 'cssmin', 'retire', 'watch']);
 };
