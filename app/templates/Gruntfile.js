@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 				files: ["<%= config.cssSrc %>/*.less", "<%= config.cssSrc %>/**/*.less"],
 				tasks: ['less', 'autoprefixer', 'cssmin']
 			}
-		}
+		},
 		retire: {
 			files: ['app/assets/js/vendor/*.js']
 		}
